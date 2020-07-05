@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="mainfile.js"></script>
+	<style>
+		body{
+        background-image: url("image2.jpeg");
+		color:yellow;
+      }
+	</style>
+  </head>
+  <body>
+    <center>
+      <div class="heading">
+        <h1><i>Registration Form</i></h1>
+      </div>
+
+      <form name="form1">
+        <table>
+          <tr>
+            <td>
+              Name :
+            </td>
+            <td>
+              <input type="text" name="name" id="name" required placeholder="Name" ><br ><br >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              E-mail:
+            </td>
+            <td>
+              <input type="text" id="email" name="email" required placeholder="E-mail" ><br ><br >
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number:</td>
+            <td>
+              <input type="number" id="no" name="mobile" required placeholder="10-digit phone number" maxlength="10" ><br ><br >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Courses:
+            </td>
+            <td>
+              <input type="radio" name="Masters" > Masters
+              <input type="radio" name="Bachelors" >Bachelors <br ><br >
+            </td>
+          </tr>
+          <tr>
+            <td>Description:</td>
+            <td><textarea></textarea> <br ><br ></td>
+          </tr>
+          <tr>
+            <td>Subject Interests:</td>
+            <td>
+              <input type="checkbox" name="AE" >AE
+              <input type="checkbox" name="DE" >DE 
+              <input type="checkbox" name="SS" >SS
+              <input type="checkbox" name="ES" >ES
+              <input type="checkbox" name="VLSI" >VLSI
+              <input type="checkbox" name="MPI" >MPI 
+            </td>
+          </tr>
+		  <br>
+          <tr>
+            <td></td>
+            <td>
+              <input type="submit" value="Submit" onclick="formvalidation()" >
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+
+  </body>
+</html>

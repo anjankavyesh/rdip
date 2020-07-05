@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CALCULATOR</title>
+    <script src="mainfile.js"></script>
+    <style>
+      th {
+        border-color:  yellow;
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        border-color:solid yellow;
+        background: red;
+      }
+      table,td,tr {
+        height: 65;
+        width: 300;
+        text-align: center;
+        table-layout: fixed;
+        border-color: lightgreen;
+        border-collapse: collapse;
+        font-size: 100px;
+        border: 5px solid transparent;
+      }
+      button {
+        display: inline-block;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        height: 50;
+        width: 70;
+        color: solid black;
+      }
+      body {
+        margin-left: 11%;
+        margin-top: 13%;
+        background-image: url("abstract.jpeg");
+        background-position: center;
+      }
+      h3{
+        color: yellow;
+        padding-left: 65px;
+      }
+    </style>
+  </head>
+<body>
+    <table>
+      <h3>MY CALCULATOR</h3>
+      <tr>
+        <th colspan="4"><input type="text" id="result" /></th>
+      </tr>
+
+      <tr>
+        <td>
+          <button value="7" onclick="dis('7')"><font>7</font></button>
+        </td>
+        <td>
+          <button value="8" onclick="dis('8')"><font>8</font></button>
+        </td>
+        <td>
+          <button value="9" onclick="dis('9')"><font>9</font></button>
+        </td>
+        <td>
+          <button value="C" onclick="clr()"><font>C</font></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button value="4" onclick="dis('4')"><font>4</font></button>
+        </td>
+        <td>
+          <button value="5" onclick="dis('5')"><font>5</font></button>
+        </td>
+        <td>
+          <button value="6" onclick="dis('6')"><font>6</font></button>
+        </td>
+        <td>
+          <button value="√" onclick="dis('√')"><font>√</font></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button value="1" onclick="dis('1')"><font>1</font></button>
+        </td>
+        <td>
+          <button value="2" onclick="dis('2')"><font>2</font></button>
+        </td>
+        <td>
+          <button value="3" onclick="dis('3')"><font>3</font></button>
+        </td>
+        <td>
+          <button value="/" onclick="dis('/')"><font>/</font></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button value="." onclick="dis('.')"><font>.</font></button>
+        </td>
+        <td>
+          <button value="0" onclick="dis('0')"><font>0</font></button>
+        </td>
+        <td>
+          <button value="%" onclick="dis('%')"><font>%</font></button>
+        </td>
+        <td>
+          <button value="*" onclick="dis('*')"><font>*</font></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button value="+" onclick="dis('+')"><font>+</font></button>
+        </td>
+        <td>
+          <button value="-" onclick="dis('-')"><font>-</font></button>
+        </td>
+
+        <td colspan="2">
+          <button style="height: 60; width: 145;" onclick="abs()">
+            <font>abs</font>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+          <button style="height: 40; width: 150;" value="abs" onclick="solve()">
+            <font>=</font>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
